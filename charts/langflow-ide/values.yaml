@@ -54,7 +54,9 @@ langflow:
       periodSeconds: 10
       timeoutSeconds: 5
       initialDelaySeconds: 5
-    env: []
+    env: 
+      - name: LANGFLOW_PORT
+        value: "7860"   # Added environment variable here
     nodeSelector: {}
 
 
